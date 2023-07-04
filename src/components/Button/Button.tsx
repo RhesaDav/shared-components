@@ -1,12 +1,16 @@
 import React from "react";
-import "./Button.scss";
+import { Button as MuiButton, ButtonProps as Props } from '@mui/material';
 
-export interface ButtonProps {
-  label: string;
+export interface ButtonProps extends Props {
+  
 }
 
-const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+const Button = ({children, ...rest}: ButtonProps) => {
+  return <MuiButton {...rest}>{children}</MuiButton>;
+};
+
+Button.defaultProps = {
+  variant: "contained",
 };
 
 export default Button;

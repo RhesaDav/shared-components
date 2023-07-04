@@ -1,9 +1,6 @@
 {
   "name": "@rhesadav/shared-components",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/rhesadav"
-  },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "IDS Component Library",
   "scripts": {
     "rollup": "rollup -c",
